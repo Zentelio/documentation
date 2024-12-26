@@ -1,0 +1,35 @@
+site_name: Zentelio
+site_url: https://docs.zentelio.net
+site_author: JoseLuisHD
+repo_url: https://github.com/Zentelio/zentelio-lang
+copyright: Copyright &copy; Zentelio by JoseLuisHD
+plugins:
+  - search
+  - tags
+theme:
+  name: material
+  language: en
+  favicon: assets/pages-ico.ico
+  logo: assets/pages-header.webp
+  features:
+    - search.suggest
+    - search.share
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.footer
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+  palette:
+    primary: black
+    accent: indigo
+    scheme: slate
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Zentelio
+    - icon: fontawesome/brands/discord
+      link: https://discord.zentelio.net
+nav:
+  - Home: index.md
