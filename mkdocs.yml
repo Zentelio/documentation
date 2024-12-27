@@ -6,6 +6,13 @@ copyright: Copyright &copy; Zentelio by JoseLuisHD
 plugins:
   - search
   - tags
+  - i18n:
+      docs_structure: suffix
+      languages:
+        - locale: en
+          default: true
+          name: en - English
+          build: true
 theme:
   name: material
   language: en
