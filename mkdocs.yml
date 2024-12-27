@@ -13,6 +13,9 @@ plugins:
           default: true
           name: en - English
           build: true
+        - locale: es
+          name: es - Español
+          build: true
 theme:
   name: material
   language: en
