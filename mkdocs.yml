@@ -20,14 +20,13 @@ plugins:
   - tags
   - i18n:
       docs_structure: suffix
-      default_language: en
       languages:
-        en:
-          name: en - English
-          build: true
+        - locale: en
+          name: English
           default: true
-        es:
-          name: es - Español
+          build: true
+        - locale: es
+          name: Español
           build: true
 markdown_extensions:
   - pymdownx.highlight:
@@ -46,7 +45,6 @@ theme:
   features:
     - search.suggest
     - search.share
-    - navigation.instant
     - navigation.instant.prefetch
     - navigation.instant.progress
     - navigation.footer
@@ -80,4 +78,4 @@ extra:
     - icon: fontawesome/brands/discord
       link: https://discord.zentelio.net
 nav:
-  - Home: home.md
+  - Home: index.md
