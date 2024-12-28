@@ -1,3 +1,15 @@
+# This file is part of the Zentelio Documentation project.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# A copy of the License is included with this project. You may also obtain
+# a copy of the License at:
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Additional licenses for third-party dependencies are also included
+# and must be reviewed separately.
+
+
 site_name: Zentelio
 site_url: https://docs.zentelio.net
 site_author: JoseLuisHD
@@ -6,6 +18,25 @@ copyright: Copyright &copy; Zentelio by JoseLuisHD
 plugins:
   - search
   - tags
+  - i18n:
+      docs_structure: suffix
+      languages:
+        - locale: en
+          name: English
+          default: true
+          build: true
+        - locale: es
+          name: Español
+          build: true
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 theme:
   name: material
   language: en
@@ -14,7 +45,6 @@ theme:
   features:
     - search.suggest
     - search.share
-    - navigation.instant
     - navigation.instant.prefetch
     - navigation.instant.progress
     - navigation.footer
@@ -22,10 +52,26 @@ theme:
     - navigation.expand
     - navigation.path
   palette:
-    primary: black
-    accent: indigo
-    scheme: slate
+      # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+      # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
 extra:
+  generator: false
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Zentelio

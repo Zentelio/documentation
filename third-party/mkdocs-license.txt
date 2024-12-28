@@ -1,0 +1,3 @@
+Name: MKDocs
+Url: https://github.com/mkdocs/mkdocs/tree/master
+License: https://github.com/mkdocs/mkdocs/blob/master/LICENSE

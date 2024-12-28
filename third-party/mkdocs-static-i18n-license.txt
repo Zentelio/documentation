@@ -1,0 +1,3 @@
+Name: MKDocs Static i18n
+Url: https://github.com/ultrabug/mkdocs-static-i18n
+License: https://github.com/ultrabug/mkdocs-static-i18n/blob/main/LICENSE
